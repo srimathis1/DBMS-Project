@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>All Playlists</h2>
+<table border="1">
+    <tr>
+        <th>Playlist ID</th><th>User ID</th><th>Playlist Name</th><th>No of Songs</th><th>Total Time</th>
+    </tr>
+    {% for row in playlists %}
+    <tr>
+        <td>{{ row[0] }}</td>
+        <td>{{ row[1] }}</td>
+        <td>{{ row[2] }}</td>
+        <td>{{ row[3] }}</td>
+        <td>{{ row[4] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

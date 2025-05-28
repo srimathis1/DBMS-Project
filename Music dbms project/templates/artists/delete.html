@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Delete Artist</h2>
+<form method="post">
+    <label>Artist ID:</label><input name="artistid" type="number" required><br>
+    <input type="submit" value="Delete">
+</form>
+{% endblock %}

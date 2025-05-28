@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Delete Song</h2>
+<form method="post">
+    <label>Song ID:</label><input name="songid" type="number" required><br>
+    <input type="submit" value="Delete">
+</form>
+{% endblock %}
