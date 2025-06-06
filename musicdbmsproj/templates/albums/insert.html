@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Insert Album</h2>
+<form method="post">
+    <label>Album ID:</label><input name="albumid" type="number" required><br>
+    <label>Album Name:</label><input name="albumname"><br>
+    <label>Artist ID:</label><input name="artistid" type="number"><br>
+    <label>Total Time:</label><input name="totaltime" type="number"><br>
+    <label>No of Songs:</label><input name="noofsongs" type="number"><br>
+    <label>Release Year:</label><input name="releaseyear" type="number"><br>
+    <input type="submit" value="Insert">
+</form>
+{% endblock %}

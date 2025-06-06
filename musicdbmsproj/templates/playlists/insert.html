@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Insert Playlist</h2>
+<form method="post">
+    <label>Playlist ID:</label><input name="playlistid" type="number" required><br>
+    <label>User ID:</label><input name="userid" type="number"><br>
+    <label>Playlist Name:</label><input name="playlistname"><br>
+    <label>Number of Songs:</label><input name="noofsongs" type="number"><br>
+    <label>Total Time:</label><input name="totaltime" type="number"><br>
+    <input type="submit" value="Insert">
+</form>
+{% endblock %}

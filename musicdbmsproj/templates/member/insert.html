@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Insert Member</h2>
+<form method="post">
+    <label>Member ID:</label><input name="memberid" type="number" required><br>
+    <label>User ID:</label><input name="userid" type="number"><br>
+    <label>Member Name:</label><input name="membername"><br>
+    <label>Email ID:</label><input name="emailid" type="email"><br>
+    <label>Type of Membership:</label><input name="typeofmembership"><br>
+    <input type="submit" value="Insert">
+</form>
+{% endblock %}

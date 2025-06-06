@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>All Entertainment</h2>
+<table border="1">
+    <tr>
+        <th>Entertainment ID</th>
+        <th>Entertainment Name</th>
+        <th>Started Year</th>
+        <th>Phone Number</th>
+    </tr>
+    {% for ent in entertainment %}
+    <tr>
+        <td>{{ ent[0] }}</td>
+        <td>{{ ent[1] }}</td>
+        <td>{{ ent[2] }}</td>
+        <td>{{ ent[3] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
