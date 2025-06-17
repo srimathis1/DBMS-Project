@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Update User</h2>
+<form method="post">
+    <label>User ID (to update):</label><input name="userid" type="number" required><br>
+    <label>New Username:</label><input name="username"><br>
+    <label>New Phone No:</label><input name="phoneno" type="number"><br>
+    <label>New Email ID:</label><input name="emailid" type="email"><br>
+    <label>New Membership:</label><input name="membership"><br>
+    <input type="submit" value="Update">
+</form>
+{% endblock %}

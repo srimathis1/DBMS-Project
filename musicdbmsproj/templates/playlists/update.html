@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Update Playlist</h2>
+<form method="post">
+    <label>Playlist ID (to update):</label><input name="playlistid" type="number" required><br>
+    <label>New User ID:</label><input name="userid" type="number"><br>
+    <label>New Playlist Name:</label><input name="playlistname"><br>
+    <label>New Number of Songs:</label><input name="noofsongs" type="number"><br>
+    <label>New Total Time:</label><input name="totaltime" type="number"><br>
+    <input type="submit" value="Update">
+</form>
+{% endblock %}

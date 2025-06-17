@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>All Songs</h2>
+<table border="1">
+    <tr>
+        <th>Song ID</th><th>Album ID</th><th>Artist ID</th><th>Song Name</th><th>Release Year</th>
+    </tr>
+    {% for row in songs %}
+    <tr>
+        <td>{{ row[0] }}</td>
+        <td>{{ row[1] }}</td>
+        <td>{{ row[2] }}</td>
+        <td>{{ row[3] }}</td>
+        <td>{{ row[4] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

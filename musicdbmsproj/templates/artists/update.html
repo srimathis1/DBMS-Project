@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Update Artist</h2>
+<form method="post">
+    <label>Artist ID:</label><input name="artistid" type="number" required><br>
+    <label>New Artist Name:</label><input name="artistname"><br>
+    <label>New Entertainment ID:</label><input name="entertainmentid" type="number"><br>
+    <label>New Debut Year:</label><input name="debutyear" type="number"><br>
+    <label>New Instagram ID:</label><input name="instaid"><br>
+    <label>New No of Songs Released:</label><input name="noofsongsreleased" type="number"><br>
+    <input type="submit" value="Update">
+</form>
+{% endblock %}
