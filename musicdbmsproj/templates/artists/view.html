@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>All Artists</h2>
+<table border="1">
+    <tr>
+        <th>Artist ID</th>
+        <th>Artist Name</th>
+        <th>Entertainment ID</th>
+        <th>Debut Year</th>
+        <th>Instagram ID</th>
+        <th>No of Songs Released</th>
+    </tr>
+    {% for artist in artists %}
+    <tr>
+        <td>{{ artist[0] }}</td>
+        <td>{{ artist[1] }}</td>
+        <td>{{ artist[2] }}</td>
+        <td>{{ artist[3] }}</td>
+        <td>{{ artist[4] }}</td>
+        <td>{{ artist[5] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

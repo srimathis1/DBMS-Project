@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Update Song</h2>
+<form method="post">
+    <label>Song ID (to update):</label><input name="songid" type="number" required><br>
+    <label>New Album ID:</label><input name="albumid" type="number"><br>
+    <label>New Artist ID:</label><input name="artistid" type="number"><br>
+    <label>New Song Name:</label><input name="songname"><br>
+    <label>New Release Year:</label><input name="releaseyear" type="number"><br>
+    <input type="submit" value="Update">
+</form>
+{% endblock %}
